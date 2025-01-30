@@ -2,13 +2,17 @@ BFS(graph, start_node):
 Create an empty queue Q
 Create a set visited to keep track of visited nodes 
 Enqueue start_node into Q
+enqueue(queue, node)
 Mark start_node as visited
+mark_visited(node, visited_set)
 while Q is not empty:
     node = Dequeue from Q
+    dequeue(queue) 
     Process node  (print or store)
     for each neighbor in graph[node]:
         if neighbor is not in visited:
             Enqueue neighbor into Q
+            is_empty(queue)
             Mark neighbor as visited
 graph="data set or tree structure"
 start_node="starting node or point for search"
